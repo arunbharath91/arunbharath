@@ -9,6 +9,6 @@
     "timeout": 100000,
     "version": "1.0"
   },
-  "basePath": "/",
+  "basePath": "/arunbharath/play-ground/",
   "useHashLocation": true
 }
