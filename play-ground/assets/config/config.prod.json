@@ -1,0 +1,14 @@
+{
+  "env": {
+    "name": "prod"
+  },
+  "cacheLocation": "localStorage",
+  "apiServer": {
+    "url": "/api",
+    "mock": "",
+    "timeout": 100000,
+    "version": "1.0"
+  },
+  "basePath": "/",
+  "useHashLocation": true
+}
