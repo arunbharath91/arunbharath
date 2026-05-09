@@ -1,0 +1,11 @@
+<svg width="200" height="40" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon -->
+  <circle cx="20" cy="20" r="18" fill="#6366f1"/>
+  <path d="M20 10L14 30H17L18.5 26H21.5L23 30H26L20 10ZM19 24L20 20.5L21 24H19Z" fill="white"/>
+  <circle cx="20" cy="8" r="1.5" fill="#fbbf24"/>
+  
+  <!-- Text -->
+  <text x="48" y="28" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#1f2937">
+    Arun Bharath UI
+  </text>
+</svg>
