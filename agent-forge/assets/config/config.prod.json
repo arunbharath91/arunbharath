@@ -4,7 +4,8 @@
   },
   "cacheLocation": "localStorage",
   "apiServer": {
-    "url": "https://arun-bharath-ui.onrender.com/api",
+    "hosturl": "https://arun-bharath-ui.onrender.com/api",
+    "mockurl": "http://localhost:3000",
     "timeout": 100000,
     "version": "1.0"
   },

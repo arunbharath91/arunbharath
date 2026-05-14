@@ -5,6 +5,7 @@
   "cacheLocation": "localStorage",
   "apiServer": {
     "hosturl": "http://127.0.0.1:3333/api",
+    "mockurl": "http://localhost:3000",
     "timeout": 100000,
     "version": "1.0"
   },
