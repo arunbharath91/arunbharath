@@ -1,0 +1,14 @@
+{
+  "env": {
+    "name": "prod"
+  },
+  "cacheLocation": "localStorage",
+  "apiServer": {
+    "url": "https://arun-bharath-ui.onrender.com/api",
+    "timeout": 100000,
+    "version": "1.0"
+  },
+  "wsUrl": "wss://arun-bharath-ui.onrender.com",
+  "basePath": "/arunbharath/agent-forge/",
+  "useHashLocation": true
+}

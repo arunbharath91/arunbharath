@@ -1,0 +1,14 @@
+{
+  "env": {
+    "name": "dev"
+  },
+  "cacheLocation": "localStorage",
+  "apiServer": {
+    "hosturl": "http://127.0.0.1:3333/api",
+    "timeout": 100000,
+    "version": "1.0"
+  },
+  "wsUrl": "ws://127.0.0.1:3333",
+  "basePath": "/",
+  "useHashLocation": false
+}
