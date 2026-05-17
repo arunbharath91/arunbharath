@@ -10,5 +10,6 @@
     "version": "1.0"
   },
   "basePath": "/arunbharath/play-ground/",
-  "useHashLocation": true
+  "useHashLocation": true,
+  "storybookUrl": "https://arunbharath91.github.io/arunbharath/storybook"
 }

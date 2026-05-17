@@ -10,5 +10,6 @@
     "version": "1.0"
   },
   "basePath": "/",
-  "useHashLocation": true
+  "useHashLocation": true,
+  "storybookUrl": "http://localhost:4400"
 }
