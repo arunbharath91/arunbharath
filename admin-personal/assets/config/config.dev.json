@@ -1,16 +1,15 @@
 {
-    "env": {
-    "name": "dev"
-     },
-    "cacheLocation": "sessionStorage",
-    "apiServer": {
-    "url": "http://localhost:3000",
-    "mock": "https://www.mocky.io/v2",
-    "filePath": "https://40.76.93.115/BridgeEmpServicedev",
+  "env": { "name": "dev" },
+  "cacheLocation": "localStorage",
+  "apiServer": {
+    "hosturl": "http://localhost:3333/api/v1",
+    "mockurl": "",
+    "filePath": "",
     "cipherText": "",
-    "timeout": 100000,
+    "timeout": 30000,
+    "portal": "admin",
     "version": "1.0"
-    },
-    "basePath": "/",
-    "useHashLocation": false
+  },
+  "basePath": "/",
+  "useHashLocation": true
 }

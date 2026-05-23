@@ -1,0 +1,363 @@
+// ==========================================================================
+// Auth Block Shared Styles
+// Shared styles for all authentication/block components:
+// login, register, forgot-password, reset-password, user-activation
+// ==========================================================================
+
+// --------------------------------------------------------------------------
+// Mixins - reusable auth layout patterns
+// --------------------------------------------------------------------------
+
+/// Full-page auth background with animated dot pattern
+@mixin auth-page-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--cmp-primary) 0%, var(--cmp-primary-hover) 100%);
+  padding: var(--cmp-spacing-4);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: authBackgroundMove 20s linear infinite;
+    pointer-events: none;
+  }
+}
+
+/// Auth card container (centered, max-width)
+@mixin auth-card-container($max-width: 900px) {
+  width: 100%;
+  max-width: $max-width;
+  position: relative;
+  z-index: 1;
+
+  .h-100 {
+    height: 100%;
+  }
+}
+
+/// Auth card row (shadow + rounded)
+@mixin auth-card-row {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--cmp-radius);
+  box-shadow: var(--cmp-shadow-xl);
+}
+
+/// Logo section (white side panel)
+@mixin auth-logo-section {
+  background: var(--cmp-white) !important;
+  padding: var(--cmp-spacing-6);
+  border-radius: var(--cmp-radius) 0 0 var(--cmp-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+/// Form section (primary colored side panel)
+@mixin auth-form-section {
+  background: var(--cmp-primary) !important;
+  padding: var(--cmp-spacing-5) var(--cmp-spacing-6);
+  border-radius: 0 var(--cmp-radius) var(--cmp-radius) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
+  overflow: hidden;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: var(--cmp-spacing-2);
+    letter-spacing: -0.5px;
+  }
+}
+
+/// Auth form controls (flat white inputs on primary bg)
+@mixin auth-form-controls {
+  .cmp-form-label,
+  .form-label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin-bottom: var(--cmp-spacing-1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .cmp-form-control,
+  .form-control {
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid transparent;
+    border-radius: var(--cmp-radius);
+    padding: var(--cmp-spacing-2) var(--cmp-spacing-3);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    color: var(--cmp-gray-900);
+    box-shadow: none;
+
+    &::placeholder {
+      color: var(--cmp-gray-400);
+    }
+
+    &:focus {
+      background: var(--cmp-white);
+      border-color: var(--cmp-white);
+      box-shadow: none;
+      outline: none;
+    }
+
+    &:disabled {
+      background: rgba(255, 255, 255, 0.5);
+      cursor: not-allowed;
+    }
+  }
+
+  .text-warning,
+  .cmp-text-warning {
+    display: flex;
+    align-items: center;
+    gap: var(--cmp-spacing-1);
+    font-weight: 500;
+    margin-top: var(--cmp-spacing-1);
+
+    &::before {
+      content: '⚠';
+      font-size: 1rem;
+    }
+  }
+}
+
+/// Auth submit button (full-width, uppercase)
+@mixin auth-submit-btn {
+  .cmp-btn {
+    width: 100%;
+    padding: var(--cmp-spacing-2) var(--cmp-spacing-4);
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: var(--cmp-radius);
+    border: none;
+    transition: all 0.3s ease;
+    margin-top: var(--cmp-spacing-2);
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active:not(:disabled) {
+      transform: translateY(0);
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}
+
+/// Password toggle button
+@mixin auth-password-toggle {
+  .password-wrapper {
+    position: relative;
+  }
+
+  .password-input,
+  .input-password {
+    padding-right: 45px !important;
+  }
+
+  .password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--cmp-gray-600);
+    cursor: pointer;
+    padding: var(--cmp-spacing-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+
+    i {
+      font-size: 20px;
+    }
+
+    &:hover {
+      color: var(--cmp-gray-800);
+    }
+  }
+}
+
+/// Auth responsive breakpoints
+@mixin auth-responsive($block-class, $logo-class, $form-class) {
+  @media (max-width: 768px) {
+    .#{$block-class} {
+      padding: var(--cmp-spacing-2);
+    }
+
+    .#{$block-class} .cmp-row > div,
+    .#{$block-class} .card-row > div {
+      border-radius: var(--cmp-radius) !important;
+      margin-bottom: var(--cmp-spacing-3);
+    }
+
+    .#{$logo-class} {
+      padding: var(--cmp-spacing-4) !important;
+      text-align: center;
+      min-height: auto !important;
+      border-radius: var(--cmp-radius) var(--cmp-radius) 0 0 !important;
+    }
+
+    .#{$form-class} {
+      padding: var(--cmp-spacing-4) !important;
+      min-height: auto !important;
+      border-radius: 0 0 var(--cmp-radius) var(--cmp-radius) !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .#{$form-class} h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------
+// Shared keyframes
+// --------------------------------------------------------------------------
+
+@keyframes authBackgroundMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+// --------------------------------------------------------------------------
+// Shared logo styles
+// --------------------------------------------------------------------------
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--cmp-spacing-3);
+
+  img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .logo-text {
+    font-size: 1.75rem;
+    color: var(--cmp-gray-800);
+    letter-spacing: 0.5px;
+  }
+}
+
+.application {
+  margin-top: var(--cmp-spacing-2);
+
+  .version {
+    font-size: var(--cmp-font-xs, 0.75rem);
+    color: var(--cmp-gray-500);
+    margin: 0;
+    padding: var(--cmp-spacing-1) var(--cmp-spacing-2);
+    background: var(--cmp-gray-100);
+    border-radius: var(--cmp-radius-full, 100px);
+    font-weight: 500;
+  }
+}
+
+// --------------------------------------------------------------------------
+// Shared animation classes
+// --------------------------------------------------------------------------
+
+.animated {
+  animation-duration: 0.6s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+// --------------------------------------------------------------------------
+// Social login (shared by login & register)
+// --------------------------------------------------------------------------
+
+.social-login {
+  display: flex;
+  gap: var(--cmp-spacing-3);
+  margin-top: var(--cmp-spacing-4);
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: var(--cmp-radius);
+    color: var(--cmp-white);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      background: var(--cmp-white);
+      color: var(--cmp-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    i {
+      font-size: 24px;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------
+// Dark theme support
+// --------------------------------------------------------------------------
+
+@media (prefers-color-scheme: dark) {
+  .logo .logo-text {
+    color: var(--cmp-white);
+  }
+
+  .application .version {
+    background: var(--cmp-gray-800);
+    color: var(--cmp-gray-300);
+  }
+}
