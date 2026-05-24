@@ -1,45 +1,7 @@
 @use '../colors.scss' as colorVar;
 header.primary-header {
-    padding         : 7px 0;
-    height          : 40px;
-    background-color: colorVar.color(light-grey-4);
-    ul.top-contacts,
-    ul.top-links {
-        list-style: none;
-        display   : flex
-    }
-
-    ul.top-contacts {
-        float: left;
-
-        li {
-            margin-right: 25px;
-
-            a {
-                font-size      : 0.9em;
-                text-decoration: none;
-            }
-        }
-
-    }
-
-    ul.top-links {
-        float: right;
-
-        li {
-            a {
-                font-size      : 0.9em;
-                text-decoration: none;
-                i {
-                    margin-left: 25px;
-                    color      : colorVar.color(medium-grey);
-                    &:hover {
-                        color: colorVar.color(primary);
-                    }
-                }
-            }
-        }
-    }
+    background-color: #ffffff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 

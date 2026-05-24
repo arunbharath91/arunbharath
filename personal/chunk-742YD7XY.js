@@ -1,0 +1,1 @@
+import{U as i,pa as o}from"./chunk-T5CYL7MW.js";var n=(()=>{class t{constructor(){this.profile=o(null),this.profileSignal=this.profile.asReadonly()}setProfile(e){this.profile.set(e)}static{this.\u0275fac=function(r){return new(r||t)}}static{this.\u0275prov=i({token:t,factory:t.\u0275fac})}}return t})();export{n as a};

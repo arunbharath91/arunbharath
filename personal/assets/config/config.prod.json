@@ -4,13 +4,13 @@
   },
   "cacheLocation": "localStorage",
   "apiServer": {
-    "hosturl": "https://testapp-4457a.firebaseio.com/",
+    "hosturl": "https://arunbharath-admin-personel-api-zzxe.onrender.com",
     "mockurl": "https://www.mocky.io/v3",
     "filePath": "https://40.76.93.115/BridgeEmpServicedev",
     "cipherText": "arun-bharath-key",
-    "timeout": 100000,
-    "version": "1.0"
-  },
+    "timeout": 1000000,
+    "version": "1.0" },
   "basePath": "/arunbharath/personal/",
   "useHashLocation": true
 }
+
