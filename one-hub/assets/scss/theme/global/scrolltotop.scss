@@ -1,0 +1,32 @@
+@use '../../colors.scss' as *;
+
+#scroll {
+  position: fixed;
+  right: 20px;
+  bottom: 60px;
+  z-index: 1111;
+  display: none;
+  opacity: 0;
+  outline: none;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  background-color: color(primary);
+  color: color(white);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+}
+
+#scroll:hover {
+  background-color: color(primary-hover);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+#scroll i {
+  font-size: 1.3em;
+}

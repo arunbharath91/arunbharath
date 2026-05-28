@@ -1,0 +1,25 @@
+.lazyLoader {
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-flex;
+    margin: 10px auto;
+    padding: 14px 16px;
+    min-height: 48px;
+    transform-origin: center;
+    color: rgba(255,255,255,.7);
+    background: #323232;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+  }
+  
+  .lazyLoader-container {
+    text-align: center;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom: 0;
+    z-index: 10000;
+    background: rgba(240,240,240,0.5);
+  }
+  

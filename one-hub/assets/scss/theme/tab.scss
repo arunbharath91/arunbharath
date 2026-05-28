@@ -1,0 +1,59 @@
+.classic-tab.nav {
+  border: none;
+}
+
+.classic-tab.nav .nav-link {
+  position: relative;
+}
+.classic-tab.nav > li > a {
+  border: none;
+  font-size: 14px;
+  font-family: "Roboto-Medium";
+  padding-left: 0;
+  padding-right: 0;
+  border-radius: 0rem;
+  color: #212529;
+  letter-spacing: 0.09rem;
+}
+.classic-tab.nav > li {
+  margin: 0 15px;
+}
+.classic-tab.nav > li a.active,
+.classic-tab.nav > li > a:hover {
+  border-bottom: 1px solid #ffd200;
+  color: #ffd200;
+  background: none;
+}
+.classic-tab.nav > li > a:not(.active):hover {
+  color: color(primary);
+}
+.classic-tab.nav > li a.active::after,
+.classic-tab.nav > li > a:hover::after {
+  color: #ffd200;
+  top: 31px;
+  content: "\f0d7";
+  font-family: fontawesome;
+  font-size: 14px;
+  align-items: center;
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 4px;
+  left: 0;
+  right: 0;
+  bottom: -13px;
+  transition: 0.3s ease;
+}
+
+// material tab
+.material-tab.nav-tabs {
+  margin-bottom: 5%;
+}
+.material-tab.nav-tabs .nav-link {
+  font-family: 'Roboto-medium';
+  border: none;
+}
+.material-tab.nav-tabs .nav-link.active {
+  border: none;
+  border-bottom: 2px solid #0062cc;
+}

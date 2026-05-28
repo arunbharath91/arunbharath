@@ -1,0 +1,13 @@
+{
+    "env": {
+        "name": "prod"
+    },
+    "cacheLocation": "sessionStorage",
+    "apiServer": {
+        "cipherText": "",
+        "timeout": 100000,
+        "version": "1.0"
+    },
+    "basePath": "/arunbharath/one-hub/",
+    "useHashLocation": true
+}

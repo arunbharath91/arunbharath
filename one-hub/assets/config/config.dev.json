@@ -1,0 +1,14 @@
+{
+    "env": {
+    "name": "dev"
+     },
+    "cacheLocation": "sessionStorage",
+    "apiServer": {
+    "hosturl": "https://testapp-4457a.firebaseio.com/",
+    "mockurl": "https://www.mocky.io/v3",
+    "filePath": "https://40.76.93.115/BridgeEmpServicedev",
+    "cipherText": "",
+    "timeout": 100000,
+    "version": "1.0"
+    }
+}

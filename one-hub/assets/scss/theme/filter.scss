@@ -1,0 +1,11 @@
+.inline fieldset {
+    display: inline-block;
+    margin-right: 0.8rem;
+    border: 1px solid #ccc;
+    padding: 0px 5px;
+    border-radius: 5px;
+}
+
+.product-filter .close-icon, .filter-menu {
+    display: none;
+}

@@ -1,0 +1,75 @@
+/*generic*/
+.product-pot {
+  .votes {
+    line-height: 0;
+    color      : #9254e1;
+
+    &::before {
+      display         : inline-block;
+      content         : '';
+      margin-right    : 0.2rem;
+      width           : 15px;
+      height          : 15px;
+      border-radius   : 20px;
+      background-color: rgba(28, 206, 234, 0.82);
+      background      : linear-gradient(-45deg, rgba(147, 26, 222, 0.83) 0%, rgba(28, 206, 234, 0.82) 100%);
+    }
+  }
+}
+
+.gradient-primary {
+  background-color: rgba(28, 206, 234, 0.82);
+  background      : linear-gradient(-45deg, rgba(147, 26, 222, 0.83) 0%, rgba(28, 206, 234, 0.82) 100%);
+}
+
+.gradient-danger {
+  background-color: rgba(245, 0, 0, 0.82);
+  background      : linear-gradient(-45deg, rgb(255, 0, 0) 0%, rgba(234, 76, 28, 0.82) 100%);
+}
+
+.gradient-success {
+  background-color: rgba(12, 189, 80, 0.82);
+  background      : linear-gradient(-45deg, rgb(6, 202, 16) 0%, rgba(102, 255, 0, 0.82) 100%);
+}
+
+.gradient-warning {
+  background-color: rgb(251, 255, 0);
+  background      : linear-gradient(-45deg, rgb(255, 221, 0) 0%, rgb(251, 176, 52) 100%);
+}
+
+.product-sticky {
+  position           : -webkit-sticky;
+  position           : sticky;
+  top                : 15px;
+  bottom             : 0;
+  z-index            : 2;
+  -webkit-align-self : flex-start;
+  -ms-flex-item-align: start;
+  align-self         : flex-start;
+}
+
+/*product view*/
+.img-container {
+  background-position: center;
+  background-size    : contain;
+  background-repeat  : no-repeat;
+  min-height         : 320px;
+  width              : 100%;
+}
+
+.product-thumbnail li a {
+  overflow: hidden;
+}
+
+.product-thumbnail li.active a {
+  border: 2px solid #2874f0 !important;
+}
+
+.product-thumbnail li.active a img {
+  padding: 5px;
+}
+
+.product-thumbnail li a img {
+  width : 60px;
+  height: auto;
+}

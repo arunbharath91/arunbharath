@@ -1,0 +1,48 @@
+footer {
+    background-color: #222222;
+    padding-top: 40px;
+}
+.middle-footer a:hover, .fpayment i:hover{
+	color: #ffd200
+}
+.fsocial a {
+    line-height: normal;
+    min-width: 35px;
+    min-height: 35px;
+    text-align: center;
+    padding-top: 9px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+}
+.fsocial a i{
+	font-size: 16px;
+}
+.fsocial a:hover{
+	background-color: #ffd200;
+	color: #000;
+}
+.fborder {
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.fpayment i {
+    font-size: 24px;
+    color: #767676;
+}
+.newsbgf {
+    margin: 0;
+    background-color: #ffd200;
+    border-radius: 5px;
+    min-height: 100px;
+}
+.copy {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    color: #fff;
+}
+.copy a, .copy .text-left {
+    color: #fff;
+}

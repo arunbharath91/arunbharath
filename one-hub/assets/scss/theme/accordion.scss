@@ -1,0 +1,14 @@
+.lg .flat-accordion .accordion-heading {
+  padding: 16px;
+}
+.sm .flat-accordion .accordion-heading {
+  padding: 6px 16px;
+}
+
+.lg .flat-accordion .accordion-heading:after {
+  top: 16px;
+}
+
+.sm .flat-accordion .accordion-heading:after {
+  top: 8px;
+}

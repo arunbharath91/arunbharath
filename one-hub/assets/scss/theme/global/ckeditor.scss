@@ -1,0 +1,49 @@
+.ckeditor table {
+  width: 100%;
+}
+.ckeditor table > tbody > tr > td {
+  border: 0;
+  padding: 0.3rem 0rem;
+}
+.ckeditor h2 {
+  font-size: 1rem !important;
+  color: #343a40 !important;
+  
+  font-family: "Roboto-Medium";
+}
+
+.ckeditor table > tbody > tr > td:nth-child(1) {
+  width: 200px;
+  padding-right: 0.5rem !important;
+  color: #567990;
+}
+
+.ckeditor table > tbody > tr {
+  font-size: 0.813rem !important;
+}
+.ckeditor ul {
+  font-size: 0.813rem !important;
+  list-style: none;
+  padding: 0;
+}
+.ckeditor ul li {
+  display: flex;
+  position: relative;
+  padding: 0 0 8px 16px;
+  line-height: 1.3rem;
+}
+.ckeditor ul li::before {
+  content: "";
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  border-radius: 50%;
+  background: #c2c2c2;
+}
+@media screen and (max-width: 800px) {
+  .ckeditor table > tbody > tr > td:nth-child(1) {
+    width: 118px;
+  }
+}

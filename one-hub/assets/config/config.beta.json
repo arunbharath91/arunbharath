@@ -1,0 +1,11 @@
+{
+  "env": {
+    "name": "beta"
+  },
+  "cacheLocation": "sessionStorage",
+  "apiServer": {
+    "cipherText": "",
+    "timeout": 100000,
+    "version": "1.0"
+  }
+}
