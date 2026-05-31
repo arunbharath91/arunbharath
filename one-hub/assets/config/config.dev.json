@@ -4,7 +4,7 @@
      },
     "cacheLocation": "sessionStorage",
     "apiServer": {
-    "hosturl": "https://testapp-4457a.firebaseio.com/",
+    "hosturl": "https://arunbharath-admin-personel-api-zzxe.onrender.com/api/v1",
     "mockurl": "https://www.mocky.io/v3",
     "filePath": "https://40.76.93.115/BridgeEmpServicedev",
     "cipherText": "",
