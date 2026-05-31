@@ -1,8 +1,0 @@
-[
-  { "key": "en", "value": "English", "flag": "EN" },
-  { "key": "ta", "value": "Tamil", "flag": "IN" },
-  { "key": "hi", "value": "Hindi", "flag": "IN" },
-  { "key": "ru", "value": "Russia", "flag": "RU" },
-  { "key": "jp", "value": "Japan", "flag": "JP" },
-  { "key": "cn", "value": "China", "flag": "CN" }
-]
