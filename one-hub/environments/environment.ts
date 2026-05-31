@@ -4,7 +4,8 @@
 
 export const environment = {
   name: 'dev',
-  production: false
+  production: false,
+  apiUrl: 'https://arunbharath-admin-personel-api-zzxe.onrender.com/api/v1'
 };
 
 /*
