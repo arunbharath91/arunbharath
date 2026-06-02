@@ -4,7 +4,7 @@
   },
   "cacheLocation": "localStorage",
   "apiServer": {
-    "hosturl": "https://arunbharath-admin-personel-api-zzxe.onrender.com",
+    "hosturl": "https://arunbharath-admin-personal-api.onrender.com/api/v1",
     "mockurl": "https://www.mocky.io/v3",
     "filePath": "https://40.76.93.115/BridgeEmpServicedev",
     "cipherText": "arun-bharath-key",
