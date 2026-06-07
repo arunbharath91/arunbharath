@@ -1,5 +1,5 @@
 export const environment = {
   name: 'prod',
   production: true,
-  apiUrl: 'https://arunbharath-admin-personel-api-zzxe.onrender.com/api/v1'
+  apiUrl: 'https://arunbharath-admin-personal-api.onrender.com/api/v1'
 };

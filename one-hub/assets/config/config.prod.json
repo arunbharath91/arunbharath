@@ -4,7 +4,7 @@
     },
     "cacheLocation": "sessionStorage",
     "apiServer": {
-        "hosturl": "https://arunbharath-admin-personel-api-zzxe.onrender.com/api/v1",
+        "hosturl": "https://arunbharath-admin-personal-api.onrender.com/api/v1",
         "cipherText": "",
         "timeout": 100000,
         "version": "1.0"
