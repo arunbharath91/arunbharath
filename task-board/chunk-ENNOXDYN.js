@@ -1,1 +1,0 @@
-import"./chunk-Q7L6LLAK.js";var t=[{path:"",loadComponent:()=>import("./chunk-P64G63L5.js").then(o=>o.UserComponent),children:[{path:"",redirectTo:"board",pathMatch:"full"},{path:"board",loadChildren:()=>import("./chunk-RTN4DJC6.js").then(o=>o.boardRoutes),data:{title:"Task Board",description:"Manage your tasks",ogUrl:"board"}}]}];export{t as userRoutes};

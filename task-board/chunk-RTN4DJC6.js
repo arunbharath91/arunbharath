@@ -1,1 +1,0 @@
-import"./chunk-Q7L6LLAK.js";var t=[{path:"",loadComponent:()=>import("./chunk-B5QS6ZQL.js").then(o=>o.BoardComponent),data:{title:"Task Board",description:"Manage your tasks and sprints",ogUrl:"board"}}];export{t as boardRoutes};

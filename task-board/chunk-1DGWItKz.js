@@ -1,0 +1,1 @@
+var t=[{path:"",loadComponent:()=>import('./chunk-CMZg9m6i.js').then(o=>o.BoardComponent),data:{title:"Task Board",description:"Manage your tasks and sprints",ogUrl:"board"}}];export{t as boardRoutes};

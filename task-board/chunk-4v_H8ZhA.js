@@ -1,0 +1,1 @@
+import {L as Lh,K as KP,E as Eg,J as Jc}from'./main-OTJ6F5TY.js';var i=class o{active=false;onToggled(e){this.active=e;}static \u0275fac=function(t){return new(t||o)};static \u0275cmp=Lh({type:o,selectors:[["app-user"]],decls:1,vars:0,template:function(t,p){t&1&&Jc(0,"router-outlet");},dependencies:[KP,Eg],encapsulation:2})};export{i as UserComponent};
