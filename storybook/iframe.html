@@ -470,7 +470,7 @@
   } catch (e) {
     // eslint-disable-next-line no-console
     console.warn('unable to connect to top frame for connecting dev tools');
-  }</script><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><style>/* Override overflow: hidden from app styles.scss */
+  }</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"><style>/* Override overflow: hidden from app styles.scss */
   html,
   body {
     overflow: auto !important;
@@ -479,7 +479,12 @@
     max-height: none !important;
     min-height: 100vh !important;
   }
-  
+
+  /* Apply default theme class so design tokens are active */
+  body {
+    font-family: 'Inter', 'Roboto', 'Helvetica Neue', sans-serif;
+  }
+
   /* Ensure Storybook docs container can scroll */
   #storybook-docs,
   .sbdocs,
@@ -489,7 +494,7 @@
     height: auto !important;
     max-height: none !important;
   }
-  
+
   /* Ensure story canvas can scroll */
   #storybook-root,
   #root {
@@ -497,24 +502,24 @@
     height: auto !important;
     min-height: 100vh;
   }
-  
+
   /* Fix main container scrolling */
   .sb-show-main,
   .sb-main-padded {
     overflow: auto !important;
     height: auto !important;
   }
-  
+
   /* Ensure docs story containers can scroll */
   .docs-story {
     overflow: visible !important;
     height: auto !important;
   }
-  
+
   /* Fix any hidden overflow on containers */
   [class*="sbdocs"] {
     overflow: visible !important;
-  }</style><link href="main.b1b3dadb9bb180f355ae.css" rel="stylesheet"><style>#storybook-root[hidden],
+  }</style><link href="main.fa72834131a52bd8fef7.css" rel="stylesheet"><style>#storybook-root[hidden],
       #storybook-docs[hidden] {
         display: none !important;
       }</style></head><body><div class="sb-preparing-story sb-wrapper"><div class="sb-loader"></div></div><div class="sb-preparing-docs sb-wrapper"><div class="sb-previewBlock"><div class="sb-previewBlock_header"><div class="sb-previewBlock_icon"></div><div class="sb-previewBlock_icon"></div><div class="sb-previewBlock_icon"></div><div class="sb-previewBlock_icon"></div></div><div class="sb-previewBlock_body"><div class="sb-loader"></div></div></div><table aria-hidden="true" class="sb-argstableBlock"><thead class="sb-argstableBlock-head"><tr><th><span>Name</span></th><th><span>Description</span></th><th><span>Default</span></th><th><span>Control</span></th></tr></thead><tbody class="sb-argstableBlock-body"><tr><td><span>propertyName</span><span title="Required">*</span></td><td><div><span>This is a short description</span></div><div class="sb-argstableBlock-summary"><div><span class="sb-argstableBlock-code">summary</span></div></div></td><td><div><span class="sb-argstableBlock-code">defaultValue</span></div></td><td><button>Set string</button></td></tr><tr><td><span>propertyName</span><span>*</span></td><td><div><span>This is a short description</span></div><div class="sb-argstableBlock-summary"><div><span class="sb-argstableBlock-code">summary</span></div></div></td><td><div><span class="sb-argstableBlock-code">defaultValue</span></div></td><td><button>Set string</button></td></tr><tr><td><span>propertyName</span><span>*</span></td><td><div><span>This is a short description</span></div><div class="sb-argstableBlock-summary"><div><span class="sb-argstableBlock-code">summary</span></div></div></td><td><div><span class="sb-argstableBlock-code">defaultValue</span></div></td><td><button>Set string</button></td></tr></tbody></table></div><div class="sb-nopreview sb-wrapper"><div class="sb-nopreview_main"><h1 class="sb-nopreview_heading sb-heading">No Preview</h1><p>Sorry, but you either have no stories or none are selected somehow.</p><ul><li>Please check the Storybook config.</li><li>Try reloading the page.</li></ul><p>If the problem persists, check the browser console, or the terminal you've run Storybook from.</p></div></div><div class="sb-errordisplay sb-wrapper"><div class="sb-errordisplay_main"><h1 id="error-message"></h1><p>The component failed to render properly, likely due to a configuration issue in Storybook. Here are some common causes and how you can address them:</p><ol><li><strong>Missing Context/Providers</strong>: You can use decorators to supply specific contexts or providers, which are sometimes necessary for components to render correctly. For detailed instructions on using decorators, please visit the <a href="https://storybook.js.org/docs/writing-stories/decorators">Decorators documentation</a>.</li><li><strong>Misconfigured Webpack or Vite</strong>: Verify that Storybook picks up all necessary settings for loaders, plugins, and other relevant parameters. You can find step-by-step guides for configuring <a href="https://storybook.js.org/docs/builders/webpack">Webpack</a> or <a href="https://storybook.js.org/docs/builders/vite">Vite</a> with Storybook.</li><li><strong>Missing Environment Variables</strong>: Your Storybook may require specific environment variables to function as intended. You can set up custom environment variables as outlined in the <a href="https://storybook.js.org/docs/configure/environment-variables">Environment Variables documentation</a>.</li></ol><pre class="sb-errordisplay_code"><code id="error-stack"></code></pre></div></div><div id="storybook-root"></div><div id="storybook-docs"></div><script>window['CONFIG_TYPE'] = "PRODUCTION";
@@ -550,8 +555,8 @@
             window['TAGS_OPTIONS'] = {"dev-only":{"excludeFromDocsStories":true},"docs-only":{"excludeFromSidebar":true},"test-only":{"excludeFromSidebar":true,"excludeFromDocsStories":true}};</script><script type="module">import './sb-preview/runtime.js';
 
       
-      import './runtime~main.9874be69.iframe.bundle.js';
+      import './runtime~main.c7f04298.iframe.bundle.js';
       
-      import './4070.a4dc6781.iframe.bundle.js';
+      import './4070.21a0777d.iframe.bundle.js';
       
-      import './main.ab34925e.iframe.bundle.js';</script></body></html>
+      import './main.6b4ddc78.iframe.bundle.js';</script></body></html>
