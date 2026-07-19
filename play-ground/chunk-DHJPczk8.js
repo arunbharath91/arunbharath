@@ -1,0 +1,1 @@
+var o=[{path:"",loadComponent:()=>import('./chunk-XDwA_X9a.js').then(e=>e.RuleBuilderComponent)}];export{o as ruleBuilderRoutes};

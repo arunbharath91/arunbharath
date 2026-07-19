@@ -1,0 +1,1 @@
+var e=[{path:"",loadComponent:()=>import('./chunk-DwSB_OdX.js').then(t=>t.ArchitectureComponent)}];export{e as architectureRoutes};
