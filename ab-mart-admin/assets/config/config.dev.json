@@ -1,0 +1,15 @@
+{
+  "env": { "name": "dev" },
+  "cacheLocation": "localStorage",
+  "apiServer": {
+    "hosturl": "http://127.0.0.1:3334/api/v1",
+    "mockurl": "",
+    "filePath": "",
+    "cipherText": "",
+    "timeout": 30000,
+    "portal": "admin",
+    "version": "1.0"
+  },
+  "basePath": "/",
+  "useHashLocation": true
+}

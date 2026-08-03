@@ -1,0 +1,1 @@
+var o=[{path:"",loadComponent:()=>import('./chunk-HH3WnLZn.js').then(e=>e.ManageReviewsComponent)}];export{o as reviewRoutes};

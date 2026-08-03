@@ -1,0 +1,1 @@
+import {n}from'./chunk-BjV3Feb8.js';var a=[{label:"Admin",value:n.ADMIN},{label:"Catalog Manager",value:n.CATALOG_MANAGER},{label:"Order Processor",value:n.ORDER_PROCESSOR},{label:"Support Agent",value:n.SUPPORT_AGENT},{label:"Vendor",value:n.VENDOR}];export{a};

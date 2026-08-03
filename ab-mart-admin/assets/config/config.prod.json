@@ -1,0 +1,15 @@
+{
+  "env": { "name": "prod" },
+  "cacheLocation": "localStorage",
+  "apiServer": {
+    "hosturl": "https://your-api-domain.com/api/v1",
+    "mockurl": "",
+    "filePath": "",
+    "cipherText": "",
+    "timeout": 30000,
+    "portal": "admin",
+    "version": "1.0"
+  },
+  "basePath": "/",
+  "useHashLocation": true
+}

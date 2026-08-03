@@ -1,0 +1,1 @@
+var o=[{path:"",loadComponent:()=>import('./chunk-B-c679rJ.js').then(t=>t.ManageAffiliatesComponent)}];export{o as affiliateRoutes};
