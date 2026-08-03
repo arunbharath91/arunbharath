@@ -1,1 +1,0 @@
-var t=[{path:"",loadComponent:()=>import('./chunk-5C0fdQT1.js').then(function(n){return n.a}).then(o=>o.DocumentationHubComponent)}];export{t as documentationRoutes};

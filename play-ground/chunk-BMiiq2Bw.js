@@ -1,0 +1,1 @@
+var o=[{path:"loader",loadComponent:()=>import('./chunk-CGXoRHpu.js').then(e=>e.LoaderServiceDemoComponent),data:{title:"Loader Service"}}];export{o as servicesRoutes};

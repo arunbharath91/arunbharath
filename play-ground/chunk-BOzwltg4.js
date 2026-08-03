@@ -1,1 +1,0 @@
-var n=[{path:"",loadComponent:()=>import('./chunk-wE5hVnHV.js').then(t=>t.InstallationComponent),data:{title:"Installation"}}];export{n as gettingStartedRoutes};

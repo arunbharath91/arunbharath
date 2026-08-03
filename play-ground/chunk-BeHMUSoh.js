@@ -1,1 +1,0 @@
-var o=[{path:"loader",loadComponent:()=>import('./chunk-BX_j84Wh.js').then(e=>e.LoaderServiceDemoComponent),data:{title:"Loader Service"}}];export{o as servicesRoutes};
