@@ -9,7 +9,9 @@
     "filePath": "https://40.76.93.115/BridgeEmpServicedev",
     "cipherText": "arun-bharath-key",
     "timeout": 1000000,
-    "version": "1.0" },
+    "version": "1.0",
+    "estimatedWakeTime": 50
+  },
   "basePath": "/arunbharath/personal/",
   "useHashLocation": true
 }
